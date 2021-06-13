@@ -1,7 +1,7 @@
 <template>
   <div class="shop-cart-sticky" v-show="visible">
     <shop-cart
-      ref="shopCart"
+      ref="shop-cart"
       :selectFoods="selectFoods"
       :deliveryPrice="deliveryPrice"
       :minPrice="minPrice"
@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     drop (el) {
-      this.$refs.shopCart.drop(el)
+      this.$refs['shop-cart'].drop(el)
     }
   },
   components: {

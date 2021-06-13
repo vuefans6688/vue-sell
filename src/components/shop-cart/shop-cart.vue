@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="shopcart">
+    <div class="shop-cart">
       <div class="content" @click="toggleList">
         <div class="content-left">
           <div class="logo-wrapper">
@@ -238,7 +238,7 @@ export default {
 @import '~common/stylus/mixin';
 @import '~common/stylus/variable';
 
-.shopcart {
+.shop-cart {
   height: 100%;
 
   .content {

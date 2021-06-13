@@ -11,9 +11,9 @@
 
 <script>
 const LENGTH = 5
-const CLS_ON = 'on'
-const CLS_HALF = 'half'
-const CLS_OFF = 'off'
+const CLASS_ON = 'on'
+const CLASS_HALF = 'half'
+const CLASS_OFF = 'off'
 
 export default {
   props: {
@@ -34,13 +34,13 @@ export default {
       const hasDecimal = score % 1 !== 0
       const integer = Math.floor(score)
       for (let i = 0; i < integer; i++) {
-        result.push(CLS_ON)
+        result.push(CLASS_ON)
       }
       if (hasDecimal) {
-        result.push(CLS_HALF)
+        result.push(CLASS_HALF)
       }
       while (result.length < LENGTH) {
-        result.push(CLS_OFF)
+        result.push(CLASS_OFF)
       }
       return result
     }
